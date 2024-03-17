@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --font-heading: "Sen", sans-serif;
+  --primary-color: #ffb900;
+}
 html {
   font-size: 62.5%;
 }
@@ -29,15 +33,19 @@ a {
   font-style: normal;
   font-weight: 600;
   /* line-height: 28px;  */
-  border-radius: 24.5px;
+  border-radius: 999px;
   background: #171100;
   /* dat chieu cao cho nut bam */
   line-height: 50px;
+}
+.btn:hover {
+  opacity: 0.9;
 }
 /* ================heder====== */
 .header.fixed {
   position: sticky;
   top: -28px;
+  z-index: 1;
 }
 .header {
   background-color: #fffcf4;
@@ -82,13 +90,169 @@ a {
   background: #171100;
   /* vi after mac dinh la inline nen ko set duoc w h===)bien thanh dplay inline-block */
   position: absolute;
-  bottom: 6px;
+  bottom: 0.6rem;
   left: 21px;
 }
 .header .btn-Sign-up {
-  min-width: 144px;
+  min-width: 14.4rem;
   text-align: center;
 }
 .header .action {
-  margin-left: 49px;
+  margin-left: 4.9rem;
+}
+/* =======================================================hero============================================= */
+.hero {
+  /* pading thay magin vi co the do nen */
+  padding-top: 5.6rem 0 6.5rem;
+  background-color: #fffcf4;
+}
+.hero .body-hero {
+  display: flex;
+}
+/* ===========================hero left=============================================== */
+.hero .media-block {
+  width: 48%;
+}
+.hero .content-block {
+  width: 52%;
+}
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  border-radius: 28px;
+  object-fit: cover;
+}
+.hero .media-block {
+  position: relative;
+}
+.hero .hero-summary {
+  position: absolute;
+  width: 27rem;
+  /* height: 244px; */
+  padding: 2.4rem;
+  flex-shrink: 0;
+  border-radius: 1.2rem;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+  bottom: 4.8rem;
+  right: 0;
+}
+.hero .item {
+  display: flex;
+  align-items: center;
+}
+.hero .item + .item {
+  margin-top: 2.2rem;
+}
+.hero .icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff9e8;
+}
+.hero .icon2 {
+  background-color: #fcf0ff;
+}
+.hero .icon3 {
+  background-color: #ecebff;
+}
+.hero-summary .info {
+  margin-left: 16px;
+}
+.hero-summary .label {
+  color: #5f5b53;
+  font-family: Poppins;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+}
+.hero-summary .title {
+  color: #171100;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3rem; /* 166.667% */
+}
+/* =========================hero right===================== */
+.content-block {
+  margin-left: 13rem;
+  margin-top: 6.4rem;
+}
+.hero .heading {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17; /* 117.241% */
+  letter-spacing: -1.16px;
+}
+.hero .desc {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+  margin-top: 2.2rem;
+}
+.hero .cta-gruop {
+  margin-top: 3.8rem;
+}
+.hero .hero-cta {
+  min-width: 18rem;
+  line-height: 6.4rem;
+  /* border-radius: 3.2rem; */
+  background-color: var(--primary-color);
+  text-align: center;
+}
+.hero .watch-video {
+  background-color: #fffcf4;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin-left: 2.8rem;
+  justify-content: center;
+  cursor: pointer;
+}
+.hero .cta-group {
+  display: flex;
+}
+.hero .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 40px;
+  background: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+  margin-right: 0.1rem;
+}
+.hero .watch-video span {
+  width: 148px;
+  color: #171100;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 166.667% */
+}
+.hero .desc-recent {
+  margin-top: 4.8rem;
+}
+.hero .start strong {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 5.4rem; /* 122.727% */
+  margin-right: 1.5rem;
+}
+.hero .start strong:nth-child(2) {
+  margin-left: 28px;
+}
+.hero .start {
+  margin-top: 0.8rem;
 }
