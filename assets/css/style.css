@@ -405,3 +405,73 @@ a {
 .popular .course-item .book-now:hover {
   background: #ffb900;
 }
+/* =====================================================feedback============================================== */
+.feedback {
+  margin-top: 135px;
+  background: #2e2100;
+  padding: 96px 0;
+}
+.feedback .feedback-item {
+  display: flex;
+  justify-content: space-between;
+}
+.feedback .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 72px;
+  background: url(<path-to-image>) lightgray -51.126px -33.052px / 228.267%
+    342.4% no-repeat;
+  object-fit: cover;
+}
+.feedback .info .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 20px; /* 141.667% */
+  white-space: nowrap;
+}
+.feedback .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+}
+.feedback .info .dots {
+  display: flex;
+  margin-top: 28px;
+  gap: 6px;
+  cursor: pointer;
+}
+.feedback .info .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: #634700;
+  /* cursor: pointer; */
+}
+.feedback .info .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
+/* .feedback .info .dot:hover {
+  border-radius: 6px;
+  background: #ffb900;
+  cursor: pointer;
+} */
+.feedback-item .content {
+  width: 66%;
+}
+.feedback-item .open-quotes {
+  width: 30px;
+  height: 28px;
+}
+.feedback-item blockquote {
+  color: #fff;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 40px; /* 153.846% */
+}
